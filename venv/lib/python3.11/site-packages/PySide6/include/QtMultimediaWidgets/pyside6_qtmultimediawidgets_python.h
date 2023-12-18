@@ -1,0 +1,62 @@
+// Copyright (C) 2022 The Qt Company Ltd.
+// SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+
+
+#ifndef SBK_QTMULTIMEDIAWIDGETS_PYTHON_H
+#define SBK_QTMULTIMEDIAWIDGETS_PYTHON_H
+
+//workaround to access protected functions
+#define protected public
+
+#include <sbkpython.h>
+#include <sbkconverter.h>
+// Module Includes
+#include <pyside6_qtcore_python.h>
+#include <pyside6_qtgui_python.h>
+#include <pyside6_qtmultimedia_python.h>
+#include <pyside6_qtnetwork_python.h>
+#include <pyside6_qtwidgets_python.h>
+
+// Bound library includes
+class QGraphicsVideoItem;
+class QVideoWidget;
+// Type indices
+enum : int {
+    SBK_QGRAPHICSVIDEOITEM_IDX                               = 0,
+    SBK_QVIDEOWIDGET_IDX                                     = 1,
+    SBK_QtMultimediaWidgets_IDX_COUNT                        = 2
+};
+// This variable stores all Python types exported by this module.
+extern PyTypeObject **SbkPySide6_QtMultimediaWidgetsTypes;
+
+// This variable stores the Python module object exported by this module.
+extern PyObject *SbkPySide6_QtMultimediaWidgetsModuleObject;
+
+// This variable stores all type converters exported by this module.
+extern SbkConverter **SbkPySide6_QtMultimediaWidgetsTypeConverters;
+
+// Converter indices
+enum : int {
+    SBK_QTMULTIMEDIAWIDGETS_QLIST_INT_IDX                    = 0, // QList<int>
+    SBK_QTMULTIMEDIAWIDGETS_QLIST_QACTIONPTR_IDX             = 1, // QList<QAction*>
+    SBK_QTMULTIMEDIAWIDGETS_QLIST_QVARIANT_IDX               = 2, // QList<QVariant>
+    SBK_QTMULTIMEDIAWIDGETS_QLIST_QSTRING_IDX                = 3, // QList<QString>
+    SBK_QTMULTIMEDIAWIDGETS_QMAP_QSTRING_QVARIANT_IDX        = 4, // QMap<QString,QVariant>
+    SBK_QtMultimediaWidgets_CONVERTERS_IDX_COUNT             = 5
+};
+// Macros for type check
+
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+namespace Shiboken
+{
+
+// PyType functions, to get the PyObjectType for a type T
+template<> inline PyTypeObject *SbkType< ::QGraphicsVideoItem >() { return reinterpret_cast<PyTypeObject *>(SbkPySide6_QtMultimediaWidgetsTypes[SBK_QGRAPHICSVIDEOITEM_IDX]); }
+template<> inline PyTypeObject *SbkType< ::QVideoWidget >() { return reinterpret_cast<PyTypeObject *>(SbkPySide6_QtMultimediaWidgetsTypes[SBK_QVIDEOWIDGET_IDX]); }
+
+} // namespace Shiboken
+
+QT_WARNING_POP
+#endif // SBK_QTMULTIMEDIAWIDGETS_PYTHON_H
+

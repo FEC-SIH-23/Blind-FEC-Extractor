@@ -1,0 +1,4 @@
+PySide6
+PySide6/Qt3DCore
+shiboken6
+shiboken6_generator

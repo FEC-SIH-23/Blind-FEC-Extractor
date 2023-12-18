@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+// Copyright (C) 2018 The Qt Company Ltd.
+// SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+-->
+<typesystem package="PySide6.QtWebEngineCore">
+  <load-typesystem name="typesystem_core.xml" generate="no"/>
+  <load-typesystem name="typesystem_gui.xml" generate="no"/>
+  <load-typesystem name="typesystem_network.xml" generate="no"/>
+  <load-typesystem name="typesystem_printsupport.xml" generate="no"/>
+  <load-typesystem name="typesystem_webchannel.xml" generate="no"/>
+
+   <rejection class="extensions"/>
+
+  <function signature="qWebEngineChromiumVersion()"/>
+  <function signature="qWebEngineChromiumSecurityPatchVersion()"/>
+  <function signature="qWebEngineVersion()"/>
+
+  <object-type name="QWebEngineCookieStore">
+    <value-type name="FilterRequest" />
+    <add-function signature="setCookieFilter(PyCallable* @filterCallback@)">
+      <inject-code class="target" position="beginning" file="../glue/qtwebenginecore.cpp"
+                   snippet="qwebenginecookiestore-setcookiefilter"/>
+    </add-function>
+  </object-type>
+
+  <value-type name="QWebEngineCertificateError">
+    <enum-type name="Type"/>
+  </value-type>
+
+  <object-type name="QWebEngineContextMenuRequest">
+    <enum-type name="EditFlag" flags="EditFlags"/>
+    <enum-type name="MediaFlag" flags="MediaFlags"/>
+    <enum-type name="MediaType"/>
+  </object-type>
+
+  <object-type name="QWebEngineDownloadRequest">
+    <enum-type name="DownloadInterruptReason"/>
+    <enum-type name="DownloadState"/>
+    <enum-type name="SavePageFormat"/>
+  </object-type>
+
+  <value-type name="QWebEngineFileSystemAccessRequest">
+    <enum-type name="AccessFlag" flags="AccessFlags"/>
+    <enum-type name="HandleType"/>
+    <!-- No default constructor -->
+    <modify-function signature="swap(QWebEngineFileSystemAccessRequest&amp;)" remove="all"/>
+  </value-type>
+
+  <value-type name="QWebEngineFullScreenRequest"/>
+
+  <object-type name="QWebEngineHistory"/>
+  <value-type name="QWebEngineHistoryItem">
+      <!-- No default constructor -->
+      <modify-function signature="swap(QWebEngineHistoryItem&amp;)" remove="all"/>
+  </value-type>
+  <object-type name="QWebEngineHistoryModel">
+    <enum-type name="Roles"/>
+  </object-type>
+
+  <object-type name="QWebEngineNotification"/>
+
+  <object-type name="QWebEnginePage">
+    <enum-type name="LifecycleState"/>
+    <enum-type name="WebAction"/>
+    <enum-type name="FindFlag" flags="FindFlags"/>
+    <enum-type name="WebWindowType"/>
+    <enum-type name="PermissionPolicy"/>
+    <enum-type name="NavigationType"/>
+    <enum-type name="Feature"/>
+    <enum-type name="FileSelectionMode"/>
+    <enum-type name="JavaScriptConsoleMessageLevel"/>
+    <enum-type name="RenderProcessTerminationStatus"/>
+    <add-function signature="findText(const QString &amp;,QWebEnginePage::FindFlags,PyObject*)">
+        <inject-code class="target" position="beginning" file="../glue/qtwebenginewidgets.cpp" snippet="qwebenginepage-findtext"/>
+    </add-function>
+    <add-function signature="toPlainText(PyObject*) const">
+        <inject-code class="target" position="beginning" file="../glue/qtwebenginewidgets.cpp" snippet="qwebenginepage-convertto"/>
+    </add-function>
+    <add-function signature="toHtml(PyObject*) const">
+        <inject-code class="target" position="beginning" file="../glue/qtwebenginewidgets.cpp" snippet="qwebenginepage-convertto"/>
+    </add-function>
+    <add-function signature="runJavaScript(const QString &amp;,quint32,PyObject*)">
+        <inject-code class="target" position="beginning" file="../glue/qtwebenginewidgets.cpp" snippet="qwebenginepage-runjavascript"/>
+    </add-function>
+  </object-type>
+
+  <object-type name="QWebEngineProfile">
+    <extra-includes>
+        <include file-name="QtWebEngineCore/QWebEngineNotification" location="global"/>
+    </extra-includes>
+    <enum-type name="HttpCacheType"/>
+    <enum-type name="PersistentCookiesPolicy"/>
+    <add-function signature="setNotificationPresenter(PyCallable* @notificationPresenter@)">
+      <inject-code class="target" position="beginning" file="../glue/qtwebenginecore.cpp" snippet="qwebengineprofile-setnotificationpresenter"/>
+    </add-function>
+  </object-type>
+
+  <object-type name="QWebEngineNewWindowRequest">
+      <enum-type name="DestinationType"/>
+  </object-type>
+
+  <value-type name="QWebEngineScript">
+    <enum-type name="InjectionPoint"/>
+    <enum-type name="ScriptWorldId" python-type="IntEnum"/>
+  </value-type>
+
+  <object-type name="QWebEngineScriptCollection"/>
+
+  <object-type name="QWebEngineSettings">
+    <enum-type name="FontFamily"/>
+    <enum-type name="FontSize"/>
+    <enum-type name="UnknownUrlSchemePolicy"/>
+    <enum-type name="WebAttribute"/>
+  </object-type>
+
+  <object-type name="QWebEngineHttpRequest">
+    <enum-type name="Method"/>
+  </object-type>
+
+  <value-type name="QWebEngineLoadingInfo">
+    <enum-type name="ErrorDomain"/>
+    <enum-type name="LoadStatus"/>
+  </value-type>
+
+  <object-type name="QWebEngineRegisterProtocolHandlerRequest"/>
+
+  <value-type name="QWebEngineFindTextResult"/>
+
+  <object-type name="QWebEngineQuotaRequest"/>
+
+  <object-type name="QWebEngineUrlRequestInfo">
+    <enum-type name="NavigationType"/>
+    <enum-type name="ResourceType"/>
+  </object-type>
+
+  <object-type name="QWebEngineUrlRequestInterceptor"/>
+
+  <object-type name="QWebEngineUrlRequestJob">
+    <enum-type name="Error"/>
+  </object-type>
+  <value-type name="QWebEngineUrlScheme">
+      <enum-type name="Syntax"/>
+      <enum-type name="SpecialPort"/>
+      <enum-type name="Flag" flags="Flags"/>
+  </value-type>
+
+  <object-type name="QWebEngineUrlSchemeHandler"/>
+
+  <!-- QtQml is pulled in via QtWebEngineCoreDepends. -->
+  <suppress-warning text="^Scoped enum 'QQml.*' does not have a type entry.*$"/>
+
+</typesystem>

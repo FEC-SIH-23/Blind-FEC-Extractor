@@ -1,0 +1,191 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QHttpServerResponder",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "StatusCode",
+                        "values": [
+                            "Continue",
+                            "SwitchingProtocols",
+                            "Processing",
+                            "Ok",
+                            "Created",
+                            "Accepted",
+                            "NonAuthoritativeInformation",
+                            "NoContent",
+                            "ResetContent",
+                            "PartialContent",
+                            "MultiStatus",
+                            "AlreadyReported",
+                            "IMUsed",
+                            "MultipleChoices",
+                            "MovedPermanently",
+                            "Found",
+                            "SeeOther",
+                            "NotModified",
+                            "UseProxy",
+                            "TemporaryRedirect",
+                            "PermanentRedirect",
+                            "BadRequest",
+                            "Unauthorized",
+                            "PaymentRequired",
+                            "Forbidden",
+                            "NotFound",
+                            "MethodNotAllowed",
+                            "NotAcceptable",
+                            "ProxyAuthenticationRequired",
+                            "RequestTimeout",
+                            "Conflict",
+                            "Gone",
+                            "LengthRequired",
+                            "PreconditionFailed",
+                            "PayloadTooLarge",
+                            "UriTooLong",
+                            "UnsupportedMediaType",
+                            "RequestRangeNotSatisfiable",
+                            "ExpectationFailed",
+                            "ImATeapot",
+                            "MisdirectedRequest",
+                            "UnprocessableEntity",
+                            "Locked",
+                            "FailedDependency",
+                            "UpgradeRequired",
+                            "PreconditionRequired",
+                            "TooManyRequests",
+                            "RequestHeaderFieldsTooLarge",
+                            "UnavailableForLegalReasons",
+                            "InternalServerError",
+                            "NotImplemented",
+                            "BadGateway",
+                            "ServiceUnavailable",
+                            "GatewayTimeout",
+                            "HttpVersionNotSupported",
+                            "VariantAlsoNegotiates",
+                            "InsufficientStorage",
+                            "LoopDetected",
+                            "NotExtended",
+                            "NetworkAuthenticationRequired",
+                            "NetworkConnectTimeoutError"
+                        ]
+                    }
+                ],
+                "gadget": true,
+                "qualifiedClassName": "QHttpServerResponder"
+            }
+        ],
+        "inputFile": "qhttpserverresponder.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QHttpServerStream",
+                "object": true,
+                "qualifiedClassName": "QHttpServerStream",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qhttpserverstream_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QAbstractHttpServer",
+                "object": true,
+                "qualifiedClassName": "QAbstractHttpServer",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "newWebSocketConnection",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qabstracthttpserver.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QHttpServer",
+                "object": true,
+                "qualifiedClassName": "QHttpServer",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QAbstractHttpServer"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qhttpserver.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QHttpServerRequest",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Method",
+                        "values": [
+                            "Unknown",
+                            "Get",
+                            "Put",
+                            "Delete",
+                            "Post",
+                            "Head",
+                            "Options",
+                            "Patch",
+                            "Connect",
+                            "Trace",
+                            "AnyKnown"
+                        ]
+                    },
+                    {
+                        "alias": "Method",
+                        "isClass": true,
+                        "isFlag": true,
+                        "name": "Methods",
+                        "values": [
+                            "Unknown",
+                            "Get",
+                            "Put",
+                            "Delete",
+                            "Post",
+                            "Head",
+                            "Options",
+                            "Patch",
+                            "Connect",
+                            "Trace",
+                            "AnyKnown"
+                        ]
+                    }
+                ],
+                "gadget": true,
+                "qualifiedClassName": "QHttpServerRequest"
+            }
+        ],
+        "inputFile": "qhttpserverrequest.h",
+        "outputRevision": 68
+    }
+]

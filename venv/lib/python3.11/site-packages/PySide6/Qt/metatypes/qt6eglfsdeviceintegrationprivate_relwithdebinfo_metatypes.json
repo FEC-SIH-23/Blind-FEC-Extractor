@@ -1,0 +1,60 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QEglFSCursorDeviceListener",
+                "object": true,
+                "qualifiedClassName": "QEglFSCursorDeviceListener",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "type",
+                                "type": "QInputDeviceManager::DeviceType"
+                            }
+                        ],
+                        "name": "onDeviceListChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "className": "QEglFSCursor",
+                "object": true,
+                "qualifiedClassName": "QEglFSCursor",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPlatformCursor"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qeglfscursor_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QEglFSDeviceIntegrationPlugin",
+                "object": true,
+                "qualifiedClassName": "QEglFSDeviceIntegrationPlugin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qeglfsdeviceintegration_p.h",
+        "outputRevision": 68
+    }
+]

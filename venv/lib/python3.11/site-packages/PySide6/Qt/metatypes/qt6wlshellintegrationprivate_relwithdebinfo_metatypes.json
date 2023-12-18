@@ -1,0 +1,23 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QWaylandWlShellSurface",
+                "object": true,
+                "qualifiedClassName": "QtWaylandClient::QWaylandWlShellSurface",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWaylandShellSurface"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QtWayland::wl_shell_surface"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qwaylandwlshellsurface_p.h",
+        "outputRevision": 68
+    }
+]

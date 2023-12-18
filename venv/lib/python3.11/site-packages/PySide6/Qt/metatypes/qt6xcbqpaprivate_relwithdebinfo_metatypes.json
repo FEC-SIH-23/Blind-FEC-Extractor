@@ -1,0 +1,268 @@
+[
+    {
+        "classes": [
+            {
+                "className": "QXcbGlIntegrationPlugin",
+                "object": true,
+                "qualifiedClassName": "QXcbGlIntegrationPlugin",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbglintegrationplugin.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbClipboardTransaction",
+                "object": true,
+                "qualifiedClassName": "QXcbClipboardTransaction",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbclipboard.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbConnection",
+                "object": true,
+                "qualifiedClassName": "QXcbConnection",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QXcbBasicConnection"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbconnection.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbBasicConnection",
+                "object": true,
+                "qualifiedClassName": "QXcbBasicConnection",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbconnection_basic.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbUnixEventDispatcher",
+                "object": true,
+                "qualifiedClassName": "QXcbUnixEventDispatcher",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QEventDispatcherUNIX"
+                    }
+                ]
+            },
+            {
+                "className": "QXcbGlibEventDispatcher",
+                "object": true,
+                "qualifiedClassName": "QXcbGlibEventDispatcher",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QEventDispatcherGlib"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbeventdispatcher.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbEventQueue",
+                "object": true,
+                "qualifiedClassName": "QXcbEventQueue",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QThread"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbeventqueue.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbMime",
+                "object": true,
+                "qualifiedClassName": "QXcbMime",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QInternalMimeData"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbmime.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbNativeInterface",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "connection",
+                                "type": "const QXcbConnection*"
+                            },
+                            {
+                                "name": "root",
+                                "type": "WId"
+                            }
+                        ],
+                        "name": "dumpConnectionNativeWindows",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "root",
+                                "type": "WId"
+                            }
+                        ],
+                        "name": "dumpNativeWindows",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "isCloned": true,
+                        "name": "dumpNativeWindows",
+                        "returnType": "QString"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "QXcbNativeInterface",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screen",
+                                "type": "QScreen*"
+                            }
+                        ],
+                        "name": "systemTrayWindowChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPlatformNativeInterface"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QNativeInterface::QX11Application"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbnativeinterface.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbScrollingDevice",
+                "object": true,
+                "qualifiedClassName": "QXcbScrollingDevice",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QPointingDevice"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbscrollingdevice_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbSystemTrayTracker",
+                "object": true,
+                "qualifiedClassName": "QXcbSystemTrayTracker",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "screen",
+                                "type": "QScreen*"
+                            }
+                        ],
+                        "name": "systemTrayWindowChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QXcbWindowEventListener"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbsystemtraytracker.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QXcbClipboardMime",
+                "object": true,
+                "qualifiedClassName": "QXcbClipboardMime",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QXcbMime"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qxcbclipboard.cpp",
+        "outputRevision": 68
+    }
+]

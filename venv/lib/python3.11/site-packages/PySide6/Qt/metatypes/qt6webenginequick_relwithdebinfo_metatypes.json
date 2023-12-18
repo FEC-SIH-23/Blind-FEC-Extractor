@@ -1,0 +1,4680 @@
+[
+    {
+        "classes": [
+            {
+                "className": "AutofillPopupEventFilter",
+                "object": true,
+                "qualifiedClassName": "QtWebEngineCore::AutofillPopupEventFilter",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ui_delegates_manager.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineAction"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "264"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineAction",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "text",
+                        "read": "text",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "iconName",
+                        "read": "iconName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "enabled",
+                        "notify": "enabledChanged",
+                        "read": "isEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineAction",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "triggered",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "enabledChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "trigger",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebengineaction_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineClientCertificateOption"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "265"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineClientCertificateOption",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "select",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "issuer",
+                        "read": "issuer",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "subject",
+                        "read": "subject",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "effectiveDate",
+                        "read": "effectiveDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDateTime",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "expiryDate",
+                        "read": "expiryDate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QDateTime",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "isSelfSigned",
+                        "read": "isSelfSigned",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineClientCertificateOption",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineClientCertificateSelection"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "265"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineClientCertificateSelection",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "idx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "select",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "certificate",
+                                "type": "const QQuickWebEngineClientCertificateOption*"
+                            }
+                        ],
+                        "name": "select",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "selectNone",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "host",
+                        "read": "host",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "certificates",
+                        "read": "certificates",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlListProperty<QQuickWebEngineClientCertificateOption>",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineClientCertificateSelection",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebengineclientcertificateselection_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "AuthenticationDialogRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "260"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineAuthenticationDialogRequest",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "AuthenticationType",
+                        "values": [
+                            "AuthenticationTypeHTTP",
+                            "AuthenticationTypeProxy"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "url",
+                        "read": "url",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "realm",
+                        "read": "realm",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "proxyHost",
+                        "read": "proxyHost",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "type",
+                        "read": "type",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "AuthenticationType",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineAuthenticationDialogRequest",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "user",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "dialogAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dialogReject",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "JavaScriptDialogRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "260"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineJavaScriptDialogRequest",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "DialogType",
+                        "values": [
+                            "DialogTypeAlert",
+                            "DialogTypeConfirm",
+                            "DialogTypePrompt",
+                            "DialogTypeBeforeUnload"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "message",
+                        "read": "message",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "defaultText",
+                        "read": "defaultText",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "title",
+                        "read": "title",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "type",
+                        "read": "type",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "DialogType",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "securityOrigin",
+                        "read": "securityOrigin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 5,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineJavaScriptDialogRequest",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "dialogAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "isCloned": true,
+                        "name": "dialogAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dialogReject",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ColorDialogRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "260"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineColorDialogRequest",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "color",
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineColorDialogRequest",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "color",
+                                "type": "QColor"
+                            }
+                        ],
+                        "name": "dialogAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dialogReject",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FileDialogRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "260"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineFileDialogRequest",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "FileMode",
+                        "values": [
+                            "FileModeOpen",
+                            "FileModeOpenMultiple",
+                            "FileModeUploadFolder",
+                            "FileModeSave"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "defaultFileName",
+                        "read": "defaultFileName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "acceptedMimeTypes",
+                        "read": "acceptedMimeTypes",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "mode",
+                        "read": "mode",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "FileMode",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineFileDialogRequest",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "files",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "name": "dialogAccept",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "dialogReject",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "TooltipRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "266"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineTooltipRequest",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "RequestType",
+                        "values": [
+                            "Show",
+                            "Hide"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "x",
+                        "read": "x",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "y",
+                        "read": "y",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "text",
+                        "read": "text",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "type",
+                        "read": "type",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "RequestType",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineTooltipRequest",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginedialogrequests_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineDownloadRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineDownloadRequest",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "view",
+                        "read": "view",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineView*",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineDownloadRequest",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWebEngineDownloadRequest"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginedownloadrequest_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "FaviconImageResponseRunnable",
+                "object": true,
+                "qualifiedClassName": "FaviconImageResponseRunnable",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pixmap",
+                                "type": "QPixmap"
+                            }
+                        ],
+                        "name": "done",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QRunnable"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginefaviconprovider_p_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QWebEngineLoadingInfoDerived",
+                "gadget": true,
+                "qualifiedClassName": "QWebEngineLoadingInfoDerived",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWebEngineLoadingInfo"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineLoadingInfo"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "webEngineLoadingInfo"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineLoadingInfo",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineLoadingInfo"
+            },
+            {
+                "className": "QWebEngineCertificateErrorDerived",
+                "gadget": true,
+                "qualifiedClassName": "QWebEngineCertificateErrorDerived",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWebEngineCertificateError"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineCertificateError"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "webEngineCertificateError"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineCertificateError",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineCertificateError"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineNavigationRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineNavigationRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "256"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineNavigationRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineNavigationRequest"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineScript"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "webEngineScript"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineScript",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineScript"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineHistory"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineHistory"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineHistory",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineHistory"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineHistoryModel"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineHistoryModel"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineHistoryModel",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineHistoryModel"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineFullScreenRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "fullScreenRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineFullScreenRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineFullScreenRequest"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineContextMenuRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "ContextMenuRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "263"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineContextMenuRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineContextMenuRequest"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineQuotaRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "webEngineQuotaRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "263"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineQuotaRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineQuotaRequest"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineRegisterProtocolHandlerRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "registerProtocolHandlerRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "263"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineRegisterProtocolHandlerRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineRegisterProtocolHandlerRequest"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineNotification"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineNotification"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "265"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineNotification",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineNotification"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineFindTextResult"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "findTextResult"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "266"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeignWebEngineFindTextResult",
+                "gadget": true,
+                "qualifiedClassName": "ForeignWebEngineFindTextResult"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineFileSystemAccessRequest"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "webEngineFileSystemAccessRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1540"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "ForeginWebEngineFileSystemAccessRequest",
+                "gadget": true,
+                "qualifiedClassName": "ForeginWebEngineFileSystemAccessRequest"
+            },
+            {
+                "className": "QWebEngineFileSystemAccessRequestDerived",
+                "gadget": true,
+                "qualifiedClassName": "QWebEngineFileSystemAccessRequestDerived",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWebEngineFileSystemAccessRequest"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineLoadingInfoDerived"
+                    },
+                    {
+                        "name": "QML.ForeignIsNamespace",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineLoadingInfo"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "ForeignWebEngineLoadingInfoNamespace",
+                "namespace": true,
+                "qualifiedClassName": "ForeignWebEngineLoadingInfoNamespace"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineCertificateErrorDerived"
+                    },
+                    {
+                        "name": "QML.ForeignIsNamespace",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineCertificateError"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "ForeignWebEngineCertificateErrorNamespace",
+                "namespace": true,
+                "qualifiedClassName": "ForeignWebEngineCertificateErrorNamespace"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineScript"
+                    },
+                    {
+                        "name": "QML.ForeignIsNamespace",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineScript"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "ForeignWebEngineScriptNamespace",
+                "namespace": true,
+                "qualifiedClassName": "ForeignWebEngineScriptNamespace"
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Foreign",
+                        "value": "QWebEngineFileSystemAccessRequestDerived"
+                    },
+                    {
+                        "name": "QML.ForeignIsNamespace",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineFileSystemAccessRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1540"
+                    }
+                ],
+                "className": "ForeginWebEngineFileSystemAccessRequestNamespace",
+                "namespace": true,
+                "qualifiedClassName": "ForeginWebEngineFileSystemAccessRequestNamespace"
+            }
+        ],
+        "inputFile": "qquickwebengineforeigntypes_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineNewWindowRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineNewWindowRequest",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickWebEngineView*"
+                            }
+                        ],
+                        "name": "openIn",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "QQuickWebEngineNewWindowRequest",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWebEngineNewWindowRequest"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginenewwindowrequest_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineProfile"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickWebEngineProfile",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "HttpCacheType",
+                        "values": [
+                            "MemoryHttpCache",
+                            "DiskHttpCache",
+                            "NoCache"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "PersistentCookiesPolicy",
+                        "values": [
+                            "NoPersistentCookies",
+                            "AllowPersistentCookies",
+                            "ForcePersistentCookies"
+                        ]
+                    }
+                ],
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "clearHttpCache",
+                        "returnType": "void",
+                        "revision": 258
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "storageName",
+                        "notify": "storageNameChanged",
+                        "read": "storageName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setStorageName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "offTheRecord",
+                        "notify": "offTheRecordChanged",
+                        "read": "isOffTheRecord",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setOffTheRecord"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "persistentStoragePath",
+                        "notify": "persistentStoragePathChanged",
+                        "read": "persistentStoragePath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setPersistentStoragePath"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "cachePath",
+                        "notify": "cachePathChanged",
+                        "read": "cachePath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setCachePath"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "httpUserAgent",
+                        "notify": "httpUserAgentChanged",
+                        "read": "httpUserAgent",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setHttpUserAgent"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 5,
+                        "name": "httpCacheType",
+                        "notify": "httpCacheTypeChanged",
+                        "read": "httpCacheType",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "HttpCacheType",
+                        "user": false,
+                        "write": "setHttpCacheType"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 6,
+                        "name": "httpAcceptLanguage",
+                        "notify": "httpAcceptLanguageChanged",
+                        "read": "httpAcceptLanguage",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setHttpAcceptLanguage"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 7,
+                        "name": "persistentCookiesPolicy",
+                        "notify": "persistentCookiesPolicyChanged",
+                        "read": "persistentCookiesPolicy",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "PersistentCookiesPolicy",
+                        "user": false,
+                        "write": "setPersistentCookiesPolicy"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 8,
+                        "name": "httpCacheMaximumSize",
+                        "notify": "httpCacheMaximumSizeChanged",
+                        "read": "httpCacheMaximumSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setHttpCacheMaximumSize"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 9,
+                        "name": "spellCheckLanguages",
+                        "notify": "spellCheckLanguagesChanged",
+                        "read": "spellCheckLanguages",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "write": "setSpellCheckLanguages"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 10,
+                        "name": "spellCheckEnabled",
+                        "notify": "spellCheckEnabledChanged",
+                        "read": "isSpellCheckEnabled",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setSpellCheckEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "name": "userScripts",
+                        "read": "userScripts",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineScriptCollection*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 12,
+                        "name": "downloadPath",
+                        "notify": "downloadPathChanged",
+                        "read": "downloadPath",
+                        "required": false,
+                        "revision": 261,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setDownloadPath"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 13,
+                        "name": "isPushServiceEnabled",
+                        "notify": "pushServiceEnabledChanged",
+                        "read": "isPushServiceEnabled",
+                        "required": false,
+                        "revision": 1541,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPushServiceEnabled"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineProfile",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "storageNameChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "offTheRecordChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "persistentStoragePathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "cachePathChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "httpUserAgentChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "httpCacheTypeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "persistentCookiesPolicyChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "httpCacheMaximumSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "httpAcceptLanguageChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "spellCheckLanguagesChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "name": "spellCheckEnabledChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "name": "downloadPathChanged",
+                        "returnType": "void",
+                        "revision": 261
+                    },
+                    {
+                        "access": "public",
+                        "name": "pushServiceEnabledChanged",
+                        "returnType": "void",
+                        "revision": 1541
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "download",
+                                "type": "QQuickWebEngineDownloadRequest*"
+                            }
+                        ],
+                        "name": "downloadRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "download",
+                                "type": "QQuickWebEngineDownloadRequest*"
+                            }
+                        ],
+                        "name": "downloadFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "notification",
+                                "type": "QWebEngineNotification*"
+                            }
+                        ],
+                        "name": "presentNotification",
+                        "returnType": "void",
+                        "revision": 261
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebengineprofile.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QQuickWebEngineScriptCollection",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "value",
+                                "type": "QWebEngineScript"
+                            }
+                        ],
+                        "name": "contains",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "name",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "find",
+                        "returnType": "QList<QWebEngineScript>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QWebEngineScript"
+                            }
+                        ],
+                        "name": "insert",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "list",
+                                "type": "QList<QWebEngineScript>"
+                            }
+                        ],
+                        "name": "insert",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QWebEngineScript"
+                            }
+                        ],
+                        "name": "remove",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "name": "clear",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "collection",
+                        "notify": "collectionChanged",
+                        "read": "collection",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QJSValue",
+                        "user": false,
+                        "write": "setCollection"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineScriptCollection",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "collectionChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginescriptcollection_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineSettings"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineSettings",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "UnknownUrlSchemePolicy",
+                        "values": [
+                            "DisallowUnknownUrlSchemes",
+                            "AllowUnknownUrlSchemesFromUserInteraction",
+                            "AllowAllUnknownUrlSchemes"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "autoLoadImages",
+                        "notify": "autoLoadImagesChanged",
+                        "read": "autoLoadImages",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoLoadImages"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "javascriptEnabled",
+                        "notify": "javascriptEnabledChanged",
+                        "read": "javascriptEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setJavascriptEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "javascriptCanOpenWindows",
+                        "notify": "javascriptCanOpenWindowsChanged",
+                        "read": "javascriptCanOpenWindows",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setJavascriptCanOpenWindows"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "javascriptCanAccessClipboard",
+                        "notify": "javascriptCanAccessClipboardChanged",
+                        "read": "javascriptCanAccessClipboard",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setJavascriptCanAccessClipboard"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "linksIncludedInFocusChain",
+                        "notify": "linksIncludedInFocusChainChanged",
+                        "read": "linksIncludedInFocusChain",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setLinksIncludedInFocusChain"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 5,
+                        "name": "localStorageEnabled",
+                        "notify": "localStorageEnabledChanged",
+                        "read": "localStorageEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setLocalStorageEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 6,
+                        "name": "localContentCanAccessRemoteUrls",
+                        "notify": "localContentCanAccessRemoteUrlsChanged",
+                        "read": "localContentCanAccessRemoteUrls",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setLocalContentCanAccessRemoteUrls"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 7,
+                        "name": "spatialNavigationEnabled",
+                        "notify": "spatialNavigationEnabledChanged",
+                        "read": "spatialNavigationEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setSpatialNavigationEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 8,
+                        "name": "localContentCanAccessFileUrls",
+                        "notify": "localContentCanAccessFileUrlsChanged",
+                        "read": "localContentCanAccessFileUrls",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setLocalContentCanAccessFileUrls"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 9,
+                        "name": "hyperlinkAuditingEnabled",
+                        "notify": "hyperlinkAuditingEnabledChanged",
+                        "read": "hyperlinkAuditingEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setHyperlinkAuditingEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 10,
+                        "name": "errorPageEnabled",
+                        "notify": "errorPageEnabledChanged",
+                        "read": "errorPageEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setErrorPageEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 11,
+                        "name": "pluginsEnabled",
+                        "notify": "pluginsEnabledChanged",
+                        "read": "pluginsEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPluginsEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 12,
+                        "name": "fullScreenSupportEnabled",
+                        "notify": "fullScreenSupportEnabledChanged",
+                        "read": "fullScreenSupportEnabled",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setFullScreenSupportEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 13,
+                        "name": "defaultTextEncoding",
+                        "notify": "defaultTextEncodingChanged",
+                        "read": "defaultTextEncoding",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setDefaultTextEncoding"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 14,
+                        "name": "screenCaptureEnabled",
+                        "notify": "screenCaptureEnabledChanged",
+                        "read": "screenCaptureEnabled",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setScreenCaptureEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 15,
+                        "name": "webGLEnabled",
+                        "notify": "webGLEnabledChanged",
+                        "read": "webGLEnabled",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setWebGLEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 16,
+                        "name": "accelerated2dCanvasEnabled",
+                        "notify": "accelerated2dCanvasEnabledChanged",
+                        "read": "accelerated2dCanvasEnabled",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccelerated2dCanvasEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 17,
+                        "name": "autoLoadIconsForPage",
+                        "notify": "autoLoadIconsForPageChanged",
+                        "read": "autoLoadIconsForPage",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAutoLoadIconsForPage"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 18,
+                        "name": "touchIconsEnabled",
+                        "notify": "touchIconsEnabledChanged",
+                        "read": "touchIconsEnabled",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setTouchIconsEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 19,
+                        "name": "focusOnNavigationEnabled",
+                        "notify": "focusOnNavigationEnabledChanged",
+                        "read": "focusOnNavigationEnabled",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setFocusOnNavigationEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 20,
+                        "name": "printElementBackgrounds",
+                        "notify": "printElementBackgroundsChanged",
+                        "read": "printElementBackgrounds",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPrintElementBackgrounds"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 21,
+                        "name": "allowRunningInsecureContent",
+                        "notify": "allowRunningInsecureContentChanged",
+                        "read": "allowRunningInsecureContent",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAllowRunningInsecureContent"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 22,
+                        "name": "allowGeolocationOnInsecureOrigins",
+                        "notify": "allowGeolocationOnInsecureOriginsChanged",
+                        "read": "allowGeolocationOnInsecureOrigins",
+                        "required": false,
+                        "revision": 260,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAllowGeolocationOnInsecureOrigins"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 23,
+                        "name": "allowWindowActivationFromJavaScript",
+                        "notify": "allowWindowActivationFromJavaScriptChanged",
+                        "read": "allowWindowActivationFromJavaScript",
+                        "required": false,
+                        "revision": 261,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAllowWindowActivationFromJavaScript"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 24,
+                        "name": "showScrollBars",
+                        "notify": "showScrollBarsChanged",
+                        "read": "showScrollBars",
+                        "required": false,
+                        "revision": 261,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setShowScrollBars"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 25,
+                        "name": "unknownUrlSchemePolicy",
+                        "notify": "unknownUrlSchemePolicyChanged",
+                        "read": "unknownUrlSchemePolicy",
+                        "required": false,
+                        "revision": 262,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "UnknownUrlSchemePolicy",
+                        "user": false,
+                        "write": "setUnknownUrlSchemePolicy"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 26,
+                        "name": "playbackRequiresUserGesture",
+                        "notify": "playbackRequiresUserGestureChanged",
+                        "read": "playbackRequiresUserGesture",
+                        "required": false,
+                        "revision": 262,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPlaybackRequiresUserGesture"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 27,
+                        "name": "webRTCPublicInterfacesOnly",
+                        "notify": "webRTCPublicInterfacesOnlyChanged",
+                        "read": "webRTCPublicInterfacesOnly",
+                        "required": false,
+                        "revision": 262,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setWebRTCPublicInterfacesOnly"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 28,
+                        "name": "javascriptCanPaste",
+                        "notify": "javascriptCanPasteChanged",
+                        "read": "javascriptCanPaste",
+                        "required": false,
+                        "revision": 262,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setJavascriptCanPaste"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 29,
+                        "name": "dnsPrefetchEnabled",
+                        "notify": "dnsPrefetchEnabledChanged",
+                        "read": "dnsPrefetchEnabled",
+                        "required": false,
+                        "revision": 263,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setDnsPrefetchEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 30,
+                        "name": "pdfViewerEnabled",
+                        "notify": "pdfViewerEnabledChanged",
+                        "read": "pdfViewerEnabled",
+                        "required": false,
+                        "revision": 264,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setPdfViewerEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 31,
+                        "name": "navigateOnDropEnabled",
+                        "notify": "navigateOnDropEnabledChanged",
+                        "read": "navigateOnDropEnabled",
+                        "required": false,
+                        "revision": 1540,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setNavigateOnDropEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 32,
+                        "name": "readingFromCanvasEnabled",
+                        "notify": "readingFromCanvasEnabledChanged",
+                        "read": "readingFromCanvasEnabled",
+                        "required": false,
+                        "revision": 1542,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setReadingFromCanvasEnabled"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineSettings",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "autoLoadImagesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "javascriptEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "javascriptCanOpenWindowsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "javascriptCanAccessClipboardChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "linksIncludedInFocusChainChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "localStorageEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "localContentCanAccessRemoteUrlsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "spatialNavigationEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "localContentCanAccessFileUrlsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "hyperlinkAuditingEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "errorPageEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "pluginsEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "fullScreenSupportEnabledChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "defaultTextEncodingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "screenCaptureEnabledChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "webGLEnabledChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "accelerated2dCanvasEnabledChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "autoLoadIconsForPageChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "touchIconsEnabledChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "focusOnNavigationEnabledChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "name": "printElementBackgroundsChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "name": "allowRunningInsecureContentChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "name": "allowGeolocationOnInsecureOriginsChanged",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "name": "allowWindowActivationFromJavaScriptChanged",
+                        "returnType": "void",
+                        "revision": 261
+                    },
+                    {
+                        "access": "public",
+                        "name": "showScrollBarsChanged",
+                        "returnType": "void",
+                        "revision": 261
+                    },
+                    {
+                        "access": "public",
+                        "name": "unknownUrlSchemePolicyChanged",
+                        "returnType": "void",
+                        "revision": 262
+                    },
+                    {
+                        "access": "public",
+                        "name": "playbackRequiresUserGestureChanged",
+                        "returnType": "void",
+                        "revision": 262
+                    },
+                    {
+                        "access": "public",
+                        "name": "webRTCPublicInterfacesOnlyChanged",
+                        "returnType": "void",
+                        "revision": 262
+                    },
+                    {
+                        "access": "public",
+                        "name": "javascriptCanPasteChanged",
+                        "returnType": "void",
+                        "revision": 262
+                    },
+                    {
+                        "access": "public",
+                        "name": "dnsPrefetchEnabledChanged",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "name": "pdfViewerEnabledChanged",
+                        "returnType": "void",
+                        "revision": 264
+                    },
+                    {
+                        "access": "public",
+                        "name": "navigateOnDropEnabledChanged",
+                        "returnType": "void",
+                        "revision": 1540
+                    },
+                    {
+                        "access": "public",
+                        "name": "readingFromCanvasEnabledChanged",
+                        "returnType": "void",
+                        "revision": 1542
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginesettings_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Singleton",
+                        "value": "true"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngine"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "257"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickWebEngineSingleton",
+                "methods": [
+                    {
+                        "access": "public",
+                        "name": "script",
+                        "returnType": "QWebEngineScript"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "settings",
+                        "read": "settings",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineSettings*",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "defaultProfile",
+                        "read": "defaultProfile",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineProfile*",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineSingleton",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginesingleton_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "TouchSelectionMenuRequest"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1539"
+                    },
+                    {
+                        "name": "QML.Creatable",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.UncreatableReason",
+                        "value": ""
+                    }
+                ],
+                "className": "QQuickWebEngineTouchSelectionMenuRequest",
+                "enums": [
+                    {
+                        "alias": "TouchSelectionCommandFlag",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "TouchSelectionCommandFlags",
+                        "values": [
+                            "Cut",
+                            "Copy",
+                            "Paste"
+                        ]
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "accepted",
+                        "read": "isAccepted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAccepted"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "selectionBounds",
+                        "read": "selectionBounds",
+                        "required": false,
+                        "revision": 65281,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QRect",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "touchSelectionCommandFlags",
+                        "read": "touchSelectionCommandFlags",
+                        "required": false,
+                        "revision": 65281,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "TouchSelectionCommandFlags",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineTouchSelectionMenuRequest",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebenginetouchselectionmenurequest_p.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "RegisterEnumClassesUnscoped",
+                        "value": "false"
+                    },
+                    {
+                        "name": "QML.Element",
+                        "value": "WebEngineView"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "256"
+                    },
+                    {
+                        "name": "QML.ExtraVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickWebEngineView",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "NavigationRequestAction",
+                        "values": [
+                            "AcceptRequest",
+                            "IgnoreRequest"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "NavigationType",
+                        "values": [
+                            "LinkClickedNavigation",
+                            "TypedNavigation",
+                            "FormSubmittedNavigation",
+                            "BackForwardNavigation",
+                            "ReloadNavigation",
+                            "OtherNavigation",
+                            "RedirectNavigation"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "LoadStatus",
+                        "values": [
+                            "LoadStartedStatus",
+                            "LoadStoppedStatus",
+                            "LoadSucceededStatus",
+                            "LoadFailedStatus"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "ErrorDomain",
+                        "values": [
+                            "NoErrorDomain",
+                            "InternalErrorDomain",
+                            "ConnectionErrorDomain",
+                            "CertificateErrorDomain",
+                            "HttpErrorDomain",
+                            "FtpErrorDomain",
+                            "DnsErrorDomain"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "NewViewDestination",
+                        "values": [
+                            "NewViewInWindow",
+                            "NewViewInTab",
+                            "NewViewInDialog",
+                            "NewViewInBackgroundTab"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Feature",
+                        "values": [
+                            "MediaAudioCapture",
+                            "MediaVideoCapture",
+                            "MediaAudioVideoCapture",
+                            "Geolocation",
+                            "DesktopVideoCapture",
+                            "DesktopAudioVideoCapture",
+                            "Notifications"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "WebAction",
+                        "values": [
+                            "NoWebAction",
+                            "Back",
+                            "Forward",
+                            "Stop",
+                            "Reload",
+                            "Cut",
+                            "Copy",
+                            "Paste",
+                            "Undo",
+                            "Redo",
+                            "SelectAll",
+                            "ReloadAndBypassCache",
+                            "PasteAndMatchStyle",
+                            "OpenLinkInThisWindow",
+                            "OpenLinkInNewWindow",
+                            "OpenLinkInNewTab",
+                            "CopyLinkToClipboard",
+                            "DownloadLinkToDisk",
+                            "CopyImageToClipboard",
+                            "CopyImageUrlToClipboard",
+                            "DownloadImageToDisk",
+                            "CopyMediaUrlToClipboard",
+                            "ToggleMediaControls",
+                            "ToggleMediaLoop",
+                            "ToggleMediaPlayPause",
+                            "ToggleMediaMute",
+                            "DownloadMediaToDisk",
+                            "InspectElement",
+                            "ExitFullScreen",
+                            "RequestClose",
+                            "Unselect",
+                            "SavePage",
+                            "OpenLinkInNewBackgroundTab",
+                            "ViewSource",
+                            "ToggleBold",
+                            "ToggleItalic",
+                            "ToggleUnderline",
+                            "ToggleStrikethrough",
+                            "AlignLeft",
+                            "AlignCenter",
+                            "AlignRight",
+                            "AlignJustified",
+                            "Indent",
+                            "Outdent",
+                            "InsertOrderedList",
+                            "InsertUnorderedList",
+                            "ChangeTextDirectionLTR",
+                            "ChangeTextDirectionRTL",
+                            "WebActionCount"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "JavaScriptConsoleMessageLevel",
+                        "values": [
+                            "InfoMessageLevel",
+                            "WarningMessageLevel",
+                            "ErrorMessageLevel"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "RenderProcessTerminationStatus",
+                        "values": [
+                            "NormalTerminationStatus",
+                            "AbnormalTerminationStatus",
+                            "CrashedTerminationStatus",
+                            "KilledTerminationStatus"
+                        ]
+                    },
+                    {
+                        "alias": "FindFlag",
+                        "isClass": false,
+                        "isFlag": true,
+                        "name": "FindFlags",
+                        "values": [
+                            "FindBackward",
+                            "FindCaseSensitively"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "PrintedPageSizeId",
+                        "values": [
+                            "A4",
+                            "B5",
+                            "Letter",
+                            "Legal",
+                            "Executive",
+                            "A0",
+                            "A1",
+                            "A2",
+                            "A3",
+                            "A5",
+                            "A6",
+                            "A7",
+                            "A8",
+                            "A9",
+                            "B0",
+                            "B1",
+                            "B10",
+                            "B2",
+                            "B3",
+                            "B4",
+                            "B6",
+                            "B7",
+                            "B8",
+                            "B9",
+                            "C5E",
+                            "Comm10E",
+                            "DLE",
+                            "Folio",
+                            "Ledger",
+                            "Tabloid",
+                            "Custom",
+                            "A10",
+                            "A3Extra",
+                            "A4Extra",
+                            "A4Plus",
+                            "A4Small",
+                            "A5Extra",
+                            "B5Extra",
+                            "JisB0",
+                            "JisB1",
+                            "JisB2",
+                            "JisB3",
+                            "JisB4",
+                            "JisB5",
+                            "JisB6",
+                            "JisB7",
+                            "JisB8",
+                            "JisB9",
+                            "JisB10",
+                            "AnsiC",
+                            "AnsiD",
+                            "AnsiE",
+                            "LegalExtra",
+                            "LetterExtra",
+                            "LetterPlus",
+                            "LetterSmall",
+                            "TabloidExtra",
+                            "ArchA",
+                            "ArchB",
+                            "ArchC",
+                            "ArchD",
+                            "ArchE",
+                            "Imperial7x9",
+                            "Imperial8x10",
+                            "Imperial9x11",
+                            "Imperial9x12",
+                            "Imperial10x11",
+                            "Imperial10x13",
+                            "Imperial10x14",
+                            "Imperial12x11",
+                            "Imperial15x11",
+                            "ExecutiveStandard",
+                            "Note",
+                            "Quarto",
+                            "Statement",
+                            "SuperA",
+                            "SuperB",
+                            "Postcard",
+                            "DoublePostcard",
+                            "Prc16K",
+                            "Prc32K",
+                            "Prc32KBig",
+                            "FanFoldUS",
+                            "FanFoldGerman",
+                            "FanFoldGermanLegal",
+                            "EnvelopeB4",
+                            "EnvelopeB5",
+                            "EnvelopeB6",
+                            "EnvelopeC0",
+                            "EnvelopeC1",
+                            "EnvelopeC2",
+                            "EnvelopeC3",
+                            "EnvelopeC4",
+                            "EnvelopeC6",
+                            "EnvelopeC65",
+                            "EnvelopeC7",
+                            "Envelope9",
+                            "Envelope11",
+                            "Envelope12",
+                            "Envelope14",
+                            "EnvelopeMonarch",
+                            "EnvelopePersonal",
+                            "EnvelopeChou3",
+                            "EnvelopeChou4",
+                            "EnvelopeInvite",
+                            "EnvelopeItalian",
+                            "EnvelopeKaku2",
+                            "EnvelopeKaku3",
+                            "EnvelopePrc1",
+                            "EnvelopePrc2",
+                            "EnvelopePrc3",
+                            "EnvelopePrc4",
+                            "EnvelopePrc5",
+                            "EnvelopePrc6",
+                            "EnvelopePrc7",
+                            "EnvelopePrc8",
+                            "EnvelopePrc9",
+                            "EnvelopePrc10",
+                            "EnvelopeYou4",
+                            "LastPageSize",
+                            "NPageSize",
+                            "NPaperSize",
+                            "AnsiA",
+                            "AnsiB",
+                            "EnvelopeC5",
+                            "EnvelopeDL",
+                            "Envelope10"
+                        ]
+                    },
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "PrintedPageOrientation",
+                        "values": [
+                            "Portrait",
+                            "Landscape"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "LifecycleState",
+                        "values": [
+                            "Active",
+                            "Frozen",
+                            "Discarded"
+                        ]
+                    }
+                ],
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "action",
+                                "type": "WebAction"
+                            }
+                        ],
+                        "name": "action",
+                        "returnType": "QQuickWebEngineAction*",
+                        "revision": 264
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineNewWindowRequest*"
+                            }
+                        ],
+                        "name": "acceptAsNewWindow",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "url",
+                        "notify": "urlChanged",
+                        "read": "url",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false,
+                        "write": "setUrl"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "icon",
+                        "notify": "iconChanged",
+                        "read": "icon",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QUrl",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "loading",
+                        "notify": "loadingChanged",
+                        "read": "isLoading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "loadProgress",
+                        "notify": "loadProgressChanged",
+                        "read": "loadProgress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "name": "title",
+                        "notify": "titleChanged",
+                        "read": "title",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 5,
+                        "name": "canGoBack",
+                        "notify": "canGoBackChanged",
+                        "read": "canGoBack",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 6,
+                        "name": "canGoForward",
+                        "notify": "canGoForwardChanged",
+                        "read": "canGoForward",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 7,
+                        "name": "isFullScreen",
+                        "notify": "isFullScreenChanged",
+                        "read": "isFullScreen",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 8,
+                        "name": "zoomFactor",
+                        "notify": "zoomFactorChanged",
+                        "read": "zoomFactor",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "write": "setZoomFactor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 9,
+                        "name": "profile",
+                        "notify": "profileChanged",
+                        "read": "profile",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineProfile*",
+                        "user": false,
+                        "write": "setProfile"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 10,
+                        "name": "settings",
+                        "read": "settings",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineSettings*",
+                        "user": false
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 11,
+                        "name": "history",
+                        "read": "history",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QWebEngineHistory*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 12,
+                        "name": "webChannel",
+                        "notify": "webChannelChanged",
+                        "read": "webChannel",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlWebChannel*",
+                        "user": false,
+                        "write": "setWebChannel"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 13,
+                        "name": "userScripts",
+                        "read": "userScripts",
+                        "required": false,
+                        "revision": 257,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineScriptCollection*",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 14,
+                        "name": "activeFocusOnPress",
+                        "notify": "activeFocusOnPressChanged",
+                        "read": "activeFocusOnPress",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setActiveFocusOnPress"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 15,
+                        "name": "backgroundColor",
+                        "notify": "backgroundColorChanged",
+                        "read": "backgroundColor",
+                        "required": false,
+                        "revision": 258,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setBackgroundColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 16,
+                        "name": "contentsSize",
+                        "notify": "contentsSizeChanged",
+                        "read": "contentsSize",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QSizeF",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 17,
+                        "name": "scrollPosition",
+                        "notify": "scrollPositionChanged",
+                        "read": "scrollPosition",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QPointF",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 18,
+                        "name": "audioMuted",
+                        "notify": "audioMutedChanged",
+                        "read": "isAudioMuted",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "write": "setAudioMuted"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 19,
+                        "name": "recentlyAudible",
+                        "notify": "recentlyAudibleChanged",
+                        "read": "recentlyAudible",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 20,
+                        "name": "webChannelWorld",
+                        "notify": "webChannelWorldChanged",
+                        "read": "webChannelWorld",
+                        "required": false,
+                        "revision": 259,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "uint",
+                        "user": false,
+                        "write": "setWebChannelWorld"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 21,
+                        "name": "inspectedView",
+                        "notify": "inspectedViewChanged",
+                        "read": "inspectedView",
+                        "required": false,
+                        "revision": 263,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineView*",
+                        "user": false,
+                        "write": "setInspectedView"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 22,
+                        "name": "devToolsView",
+                        "notify": "devToolsViewChanged",
+                        "read": "devToolsView",
+                        "required": false,
+                        "revision": 263,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickWebEngineView*",
+                        "user": false,
+                        "write": "setDevToolsView"
+                    },
+                    {
+                        "constant": true,
+                        "designable": true,
+                        "final": true,
+                        "index": 23,
+                        "name": "devToolsId",
+                        "read": "devToolsId",
+                        "required": false,
+                        "revision": 1542,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 24,
+                        "name": "lifecycleState",
+                        "notify": "lifecycleStateChanged",
+                        "read": "lifecycleState",
+                        "required": false,
+                        "revision": 266,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "LifecycleState",
+                        "user": false,
+                        "write": "setLifecycleState"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 25,
+                        "name": "recommendedState",
+                        "notify": "recommendedStateChanged",
+                        "read": "recommendedState",
+                        "required": false,
+                        "revision": 266,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "LifecycleState",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 26,
+                        "name": "renderProcessPid",
+                        "notify": "renderProcessPidChanged",
+                        "read": "renderProcessPid",
+                        "required": false,
+                        "revision": 267,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qint64",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 27,
+                        "name": "touchHandleDelegate",
+                        "notify": "touchHandleDelegateChanged",
+                        "read": "touchHandleDelegate",
+                        "required": false,
+                        "revision": 65280,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlComponent*",
+                        "user": false,
+                        "write": "setTouchHandleDelegate"
+                    }
+                ],
+                "qualifiedClassName": "QQuickWebEngineView",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "titleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "urlChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "iconChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "loadingInfo",
+                                "type": "QWebEngineLoadingInfo"
+                            }
+                        ],
+                        "name": "loadingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "loadProgressChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "hoveredUrl",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "name": "linkHovered",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineNavigationRequest*"
+                            }
+                        ],
+                        "name": "navigationRequested",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "level",
+                                "type": "QQuickWebEngineView::JavaScriptConsoleMessageLevel"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "lineNumber",
+                                "type": "int"
+                            },
+                            {
+                                "name": "sourceID",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "javaScriptConsoleMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QWebEngineCertificateError"
+                            }
+                        ],
+                        "name": "certificateError",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineFullScreenRequest"
+                            }
+                        ],
+                        "name": "fullScreenRequested",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "isFullScreenChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "securityOrigin",
+                                "type": "QUrl"
+                            },
+                            {
+                                "name": "feature",
+                                "type": "QQuickWebEngineView::Feature"
+                            }
+                        ],
+                        "name": "featurePermissionRequested",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "arg",
+                                "type": "qreal"
+                            }
+                        ],
+                        "name": "zoomFactorChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "profileChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "webChannelChanged",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "activeFocusOnPressChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "backgroundColorChanged",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "terminationStatus",
+                                "type": "QQuickWebEngineView::RenderProcessTerminationStatus"
+                            },
+                            {
+                                "name": "exitCode",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "renderProcessTerminated",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "name": "windowCloseRequested",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "size",
+                                "type": "QSizeF"
+                            }
+                        ],
+                        "name": "contentsSizeChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "position",
+                                "type": "QPointF"
+                            }
+                        ],
+                        "name": "scrollPositionChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "muted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "audioMutedChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "recentlyAudible",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "recentlyAudibleChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "uint"
+                            }
+                        ],
+                        "name": "webChannelWorldChanged",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineContextMenuRequest*"
+                            }
+                        ],
+                        "name": "contextMenuRequested",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineAuthenticationDialogRequest*"
+                            }
+                        ],
+                        "name": "authenticationDialogRequested",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineJavaScriptDialogRequest*"
+                            }
+                        ],
+                        "name": "javaScriptDialogRequested",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineColorDialogRequest*"
+                            }
+                        ],
+                        "name": "colorDialogRequested",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineFileDialogRequest*"
+                            }
+                        ],
+                        "name": "fileDialogRequested",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "pdfPrintingFinished",
+                        "returnType": "void",
+                        "revision": 261
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineQuotaRequest"
+                            }
+                        ],
+                        "name": "quotaRequested",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "geometry",
+                                "type": "QRect"
+                            },
+                            {
+                                "name": "frameGeometry",
+                                "type": "QRect"
+                            }
+                        ],
+                        "name": "geometryChangeRequested",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "name": "inspectedViewChanged",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "name": "devToolsViewChanged",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineRegisterProtocolHandlerRequest"
+                            }
+                        ],
+                        "name": "registerProtocolHandlerRequested",
+                        "returnType": "void",
+                        "revision": 263
+                    },
+                    {
+                        "access": "public",
+                        "name": "printRequested",
+                        "returnType": "void",
+                        "revision": 264
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "clientCertSelection",
+                                "type": "QQuickWebEngineClientCertificateSelection*"
+                            }
+                        ],
+                        "name": "selectClientCertificate",
+                        "returnType": "void",
+                        "revision": 265
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineTooltipRequest*"
+                            }
+                        ],
+                        "name": "tooltipRequested",
+                        "returnType": "void",
+                        "revision": 266
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "state",
+                                "type": "QQuickWebEngineView::LifecycleState"
+                            }
+                        ],
+                        "name": "lifecycleStateChanged",
+                        "returnType": "void",
+                        "revision": 266
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "state",
+                                "type": "QQuickWebEngineView::LifecycleState"
+                            }
+                        ],
+                        "name": "recommendedStateChanged",
+                        "returnType": "void",
+                        "revision": 266
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "result",
+                                "type": "QWebEngineFindTextResult"
+                            }
+                        ],
+                        "name": "findTextFinished",
+                        "returnType": "void",
+                        "revision": 266
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "pid",
+                                "type": "qint64"
+                            }
+                        ],
+                        "name": "renderProcessPidChanged",
+                        "returnType": "void",
+                        "revision": 267
+                    },
+                    {
+                        "access": "public",
+                        "name": "canGoBackChanged",
+                        "returnType": "void",
+                        "revision": 267
+                    },
+                    {
+                        "access": "public",
+                        "name": "canGoForwardChanged",
+                        "returnType": "void",
+                        "revision": 267
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineNewWindowRequest*"
+                            }
+                        ],
+                        "name": "newWindowRequested",
+                        "returnType": "void",
+                        "revision": 268
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QQuickWebEngineTouchSelectionMenuRequest*"
+                            }
+                        ],
+                        "name": "touchSelectionMenuRequested",
+                        "returnType": "void",
+                        "revision": 1539
+                    },
+                    {
+                        "access": "public",
+                        "name": "touchHandleDelegateChanged",
+                        "returnType": "void",
+                        "revision": 1540
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "request",
+                                "type": "QWebEngineFileSystemAccessRequest"
+                            }
+                        ],
+                        "name": "fileSystemAccessRequested",
+                        "returnType": "void",
+                        "revision": 1540
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            },
+                            {
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "name": "runJavaScript",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "runJavaScript",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            },
+                            {
+                                "name": "worldId",
+                                "type": "quint32"
+                            },
+                            {
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "name": "runJavaScript",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            },
+                            {
+                                "name": "worldId",
+                                "type": "quint32"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "runJavaScript",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "html",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "baseUrl",
+                                "type": "QUrl"
+                            }
+                        ],
+                        "name": "loadHtml",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "html",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "loadHtml",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "goBack",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "goForward",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "goBackOrForward",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "reload",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "reloadAndBypassCache",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "stop",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "subString",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "options",
+                                "type": "FindFlags"
+                            },
+                            {
+                                "name": "callback",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "name": "findText",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "subString",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "options",
+                                "type": "FindFlags"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "findText",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "subString",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "findText",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "name": "fullScreenCancelled",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "securityOrigin",
+                                "type": "QUrl"
+                            },
+                            {
+                                "type": "QQuickWebEngineView::Feature"
+                            },
+                            {
+                                "name": "granted",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "grantFeaturePermission",
+                        "returnType": "void",
+                        "revision": 257
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "arg",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "setActiveFocusOnPress",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "action",
+                                "type": "WebAction"
+                            }
+                        ],
+                        "name": "triggerWebAction",
+                        "returnType": "void",
+                        "revision": 258
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pageSizeId",
+                                "type": "PrintedPageSizeId"
+                            },
+                            {
+                                "name": "orientation",
+                                "type": "PrintedPageOrientation"
+                            }
+                        ],
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pageSizeId",
+                                "type": "PrintedPageSizeId"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "callback",
+                                "type": "QJSValue"
+                            },
+                            {
+                                "name": "pageSizeId",
+                                "type": "PrintedPageSizeId"
+                            },
+                            {
+                                "name": "orientation",
+                                "type": "PrintedPageOrientation"
+                            }
+                        ],
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "callback",
+                                "type": "QJSValue"
+                            },
+                            {
+                                "name": "pageSizeId",
+                                "type": "PrintedPageSizeId"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "callback",
+                                "type": "QJSValue"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "printToPdf",
+                        "returnType": "void",
+                        "revision": 259
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "replacement",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "replaceMisspelledWord",
+                        "returnType": "void",
+                        "revision": 260
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "format",
+                                "type": "QWebEngineDownloadRequest::SavePageFormat"
+                            }
+                        ],
+                        "name": "save",
+                        "returnType": "void",
+                        "revision": 1542
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "isCloned": true,
+                        "name": "save",
+                        "returnType": "void",
+                        "revision": 1542
+                    },
+                    {
+                        "access": "private",
+                        "name": "lazyInitialize",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickwebengineview_p.h",
+        "outputRevision": 68
+    }
+]
