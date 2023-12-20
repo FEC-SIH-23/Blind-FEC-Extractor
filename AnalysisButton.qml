@@ -7,10 +7,10 @@ import QtQuick.Dialogs
 import QtCore
 
 Rectangle {
-    width: 125
-    height: 125
-    radius: 125 / 2
-    color: "#FF5440"
+    width: 170
+    height: 170
+    radius: 170 / 2
+    // color: "#FF5440"
     property alias buttonText: btext.text
     property alias imageSource: hotImage.source
     property int uploadFlag
@@ -28,7 +28,7 @@ Rectangle {
         id: btext
         anchors.top: hotImage.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        font.pixelSize: 36/2
+        font.pixelSize: 32/2
         color: "#1E1A1D"
         text: "Analyse"
     }

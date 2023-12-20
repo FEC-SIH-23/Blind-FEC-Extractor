@@ -10,8 +10,6 @@ Rectangle {
     Connections {
         target: myObject
         function onMessageChanged(message) {
-            // stackView.push("FinishScreen.qml")
-            // console.log(message)
             window.inputText = message
         } 
     }
