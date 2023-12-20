@@ -16,7 +16,7 @@ from tensorflow.keras.models import load_model
 
 fecEncoding = ['Turbo','Convolutional','LDPC','BCH']
 
-model_path = 'sih_2048_snr2_model'
+model_path = 'model'
 
 loaded_model = load_model(model_path)
 
