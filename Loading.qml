@@ -5,6 +5,7 @@ import QtQuick.Controls.Material 2.12
 Rectangle {
     implicitHeight: parent.height
     implicitWidth: parent.width
+    property int uploadFlag
 
     Connections {
         target: myObject
@@ -24,7 +25,7 @@ Rectangle {
 
     Component.onCompleted: {
         dispensingTimer.start()
-        myObject.print_message(window.inputText)
+        myObject.predict(window.inputText, uploadFlag)
     }
 
     id: mainBackground

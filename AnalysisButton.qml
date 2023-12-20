@@ -37,7 +37,8 @@ Rectangle {
         id: mouse
         anchors.fill: parent
         onClicked: if ( uploadFlag === 0 ) {
-            stackView.push("Loading.qml")
+            // stackView.push("Loading.qml")window.inputText
+            stackView.push("Loading.qml", {uploadFlag: "0"})
         }
         else {
             fileDialog.open()
@@ -47,10 +48,12 @@ Rectangle {
 
     FileDialog {
         id: fileDialog
-        currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
+        // currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
         onAccepted: {
              console.log(selectedFile)
-             stackView.push("Loading.qml")
+            //  stackView.push("Loading.qml")
+             window.inputText = selectedFile
+             stackView.push("Loading.qml", {uploadFlag: "1"})
         }
     }
 }

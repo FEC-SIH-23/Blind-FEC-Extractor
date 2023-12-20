@@ -29,12 +29,12 @@ class MyObject(QObject):
         self._message = ""
 
     @Slot(str, int)
-    def print_message(self, message, flag):
+    def predict(self, message, flag):
         # print(message)
         if (flag == 0):
             asyncio.run(self.modelOutputWithMessage(message))
         else:
-            asyncio.run(self.modelOutput(message))
+            asyncio.run(self.modelOutputWithPath(message))
     
     async def modelOutputWithMessage(self, bit_string):
         bit_string = bit_string.replace('\n', '') 
@@ -47,8 +47,14 @@ class MyObject(QObject):
         self.messageChanged.emit(fecEncoding[final])
 
     async def modelOutputWithPath(self, path):
-        bit_string = bit_string.replace('\n', '') 
-        bit_array = np.array(list(bit_string), dtype=int)
+        path.replace("file://", "")
+        df = pd.read_csv(path)
+        data = []
+        
+        for bit_string in df:
+            bit_array = np.array(list(bit_string), dtype=int)
+            data.append(bit_array)
+
         df_test = np.reshape(bit_array, (1, 2048, 1))
         df_float = tf.convert_to_tensor(df_test, dtype=tf.float32)
         predictions = loaded_model.predict(df_float)

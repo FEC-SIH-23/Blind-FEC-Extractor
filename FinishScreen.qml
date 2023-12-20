@@ -12,7 +12,7 @@ Rectangle {
     }
 
     Component.onCompleted: {
-        textField.text = ""
+        // inputText = ""
         finishTimer.start()
         }
 
