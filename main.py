@@ -8,6 +8,18 @@ from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtCore import QObject, Slot, Property, Signal
 
+import tensorflow as tf
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+
+fecEncoding = ['Turbo','Convolutional','LDPC','BCH']
+
+model_path = 'sih_2048_snr2_model'
+
+loaded_model = load_model(model_path)
+
 
 class MyObject(QObject):
     messageChanged = Signal(str)
@@ -16,16 +28,33 @@ class MyObject(QObject):
         QObject.__init__(self)
         self._message = ""
 
-    @Slot(str,int)
-    def print_message(self, message, count):
-        asyncio.run(self.async_print_message(message, count))
+    @Slot(str, int)
+    def print_message(self, message, flag):
+        # print(message)
+        if (flag == 0):
+            asyncio.run(self.modelOutputWithMessage(message))
+        else:
+            asyncio.run(self.modelOutput(message))
     
-    async def async_print_message(self, message, count):
-        for _ in range(count):
-            print(message)
-            await asyncio.sleep(1)  # simulate long-running operation
-        self.messageChanged.emit(message * count)
+    async def modelOutputWithMessage(self, bit_string):
+        bit_string = bit_string.replace('\n', '') 
+        bit_array = np.array(list(bit_string), dtype=int)
+        df_test = np.reshape(bit_array, (1, 2048, 1))
+        df_float = tf.convert_to_tensor(df_test, dtype=tf.float32)
+        predictions = loaded_model.predict(df_float)
+        final = np.argmax(predictions)
+        print(fecEncoding[final])
+        self.messageChanged.emit(fecEncoding[final])
 
+    async def modelOutputWithPath(self, path):
+        bit_string = bit_string.replace('\n', '') 
+        bit_array = np.array(list(bit_string), dtype=int)
+        df_test = np.reshape(bit_array, (1, 2048, 1))
+        df_float = tf.convert_to_tensor(df_test, dtype=tf.float32)
+        predictions = loaded_model.predict(df_float)
+        final = np.argmax(predictions)
+        print(fecEncoding[final])
+        self.messageChanged.emit(fecEncoding[final])
 
 
 if __name__ == "__main__":
@@ -41,6 +70,3 @@ if __name__ == "__main__":
     sys.exit(app.exec())
 
 # a slot for a qml signal for a function printing hello world
-    
-
-    
