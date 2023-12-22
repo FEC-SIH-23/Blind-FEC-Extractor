@@ -1,0 +1,4 @@
+sionna==0.16.1
+scikit-commpy==0.8.0
+pandas==2.1.4
+numpy==1.24.3
